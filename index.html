@@ -1,116 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Jonathan Saina - IT Solutions Architect & Linux Engineer">
+    <meta name="keywords" content="DevOps, Software Engineering, IT Governance, Data Analytics, Cloud Architecture">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonathan Saina's Portfolio">
-    <title>Saina's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Saina | Enterprise Systems Architect</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-    <header>
-        <div class="cover-image">
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://github.com/Sainawj">Github Repository</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="title-overlay">
-                <h1>Jonathan Saina</h1>
-                <p>Full Stack | DevOps | Project Management</p>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><h3 style="color: white; font-weight: bold;">J. SAINA</h3></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Projects</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://www.linkedin.com/in/sainawj"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/Sainawj"><i class="fa fa-github"></i></a>
+                            <a href="mailto:jonathansaina@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div id="mobile-menu-wrap"></div>
         </div>
     </header>
 
-    <section id="about" class="section-padding">
-        <h2>About Me</h2>
-        <p>With over 5 years of experience in IT SysOps, infrastructure coordination, and software development, I specialize in delivering efficient, scalable solutions. I’m passionate about blockchain technology, data analytics, and leading tech-driven transformations in businesses.</p>
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-architect.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <!-- <span>Jonathan Saina</span> -->
+                                <h2>IT Solutions Architecture</h2>
+                                <p class="text-white mb-4">Translating complex business requirements into scalable, secure, and high-performance IT ecosystems.</p>
+                                <a href="./portfolio.html" class="primary-btn">Explore Expertise</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-fullstack.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>Full-Stack Development</h2>
+                                <p class="text-white mb-4">Building scalable, end-to-end web applications through seamless integration of frontend interfaces, backend logic, and databases.</p>
+                                <a href="#" class="primary-btn">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-devops.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>DevOps Engineering</h2>
+                                <p class="text-white mb-4">Automating CI/CD pipelines and deploying highly available infrastructure on-prem & Cloud.</p>
+                                <a href="./portfolio.html" class="primary-btn">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-data.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>Data Analytics</h2>
+                                <p class="text-white mb-4">Driving intelligent business decisions through predictive modeling and Power BI visualization.</p>
+                                <a href="./portfolio.html" class="primary-btn">See Case Studies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-itgov.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <h2>IT Governance</h2>
+                                <p class="text-white mb-4">Ensuring strategic alignment, risk management, and value delivery through effective frameworks and controls.</p>
+                                <a href="./contact.html" class="primary-btn">Let's Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section id="skills" class="section-padding">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <h3>Development</h3>
-                <h4>Frontend</h4>
-                <p>React, HTML, CSS, JavaScript</p>
-                <h4>Backend</h4>
-                <p>Node.js, Flask, Django, SQL, Databricks</p>
-                <h4>Blockchain & Smart Contracts</h4>
-                <p>Solidity, Truffle, Web3.js</p>
-            </div>
-            <div class="skill">
-                <h3>Project Management</h3>
-                <h4>Techniques</h4>
-                <p>Scrum, Lean, Extreme Programming, Agile, PRINCE2</p>
-                <h4>Tools</h4>
-                <p>Microsoft Project, Microsoft Teams, Slack, SharePoint, Azure DevOps </p>
-                <h4>Data Processing and Visualization</h4>
-                <p>Grafana,Tableu,Power BI</p>
-            </div>
-            <div class="skill">
-                <h3>DevOps Tools</h3>
-                <h4>Planning & Collaboration</h4>
-                <p>Azure Board, Jira, Github, Trello</p>
-                <h4>Build, Test, Release & Monitoring</h4>
-                <p>JUnit, Selenium, Jenkins, Control-M, Datadog</p>
-                <h4>Deployment & Operate</h4>
-                <p>Docker, Jenkins, Terraform, Kubernetes</p>
-            </div>
-            <div class="skill">
-                <h3>Change Management & Data Analytics</h3>
-                <h4>Process Optimization </h4>
-                <p>Requirement Elicitation/Analysis, Stakeholder Engagement, Risk Management, Conflict Resolution, Training and Support, CAB facilitation, Documentation and Reporting</p>
-                <h4>Tools</h4>
-                <p>SharePoint, Power Automate, SSIS, Nifi, Power BI, Parquet, Teams, ITSM, Azure DevOps, Trello, Teams, Jira</p>
+    <section class="services spad" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Services</span>
+                            <h2>What I do.</h2>
+                        </div>
+                        <p>I deliver end-to-end IT solutions bridging the gap between infrastructure, code, and data. My focus is on operational efficiency, system reliability, and driving actionable enterprise value.</p>
+                        <a href="./services.html" class="primary-btn">View all services</a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <i class="fa fa-cloud-upload" style="font-size: 40px; color: #007bff;"></i>
+                                    <!-- <img src="img/icons/si-1.png" alt=""> -->
+                                </div>
+                                <h4>Full-Stack Development</h4>
+                                <p>Building highly concurrent web apps, RESTful APIs, and microservices using React, Node.js, Python, and scalable databases.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <i class="fa fa-code" style="font-size: 40px; color: #007bff;"></i>
+                                </div>
+                                <h4>Cloud & DevOps Engineering</h4>
+                                <p>Implementing zero-downtime CI/CD pipelines, container orchestration (Docker/Kubernetes), and infrastructure optimization on AWS/Azure.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <i class="fa fa-bar-chart" style="font-size: 40px; color: #007bff;"></i>
+                                </div>
+                                <h4>Machine Learning & Data</h4>
+                                <p>Deploying predictive analytics, demand forecasting models, and interactive Power BI dashboards to support data-driven architecture.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <i class="fa fa-shield" style="font-size: 40px; color: #007bff;"></i>
+                                </div>
+                                <h4>IT Governance & Change</h4>
+                                <p>Facilitating ITIL-aligned change management, CAB sessions, and operational readiness audits to guarantee deployment stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section-padding">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="images/real-estate-project.png" alt="Real Estate Blockchain Project">
-                <h3>Real Estate Blockchain Project</h3>
-                <p>Developing a decentralized platform for transparent real estate transactions using Ethereum and IPFS.</p>
-                <a href="https://sainawj.github.io/real-estate-landing-page/" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project">
-                <img src="images/airbnb.jpg" alt="AirBnb Clone">
-                <h3>Airbnb Clone</h3>
-                <p>A Flask-based web app for user authentication, property listings, bookings, and reviews management</p>
-                <a href="https://github.com/Sainawj/AirBnB_clone_v4/blob/main/README.md" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project">
-                <img src="images/sitesweep-project.jpeg" alt="Sitesweep data Scrapper">
-                <h3>Sitesweep: Data Scraper</h3>
-                <p>Web scraping application designed to help users collect, store, and manage data from websites effortlessly</p>
-                <a href="https://sainawj.github.io/sitesweep/" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project">
-                <img src="images/skyline.jpg" alt="Frontend Projects">
-                <h3>Frontend Projects</h3>
-                <p>Focuses on building user interfaces, ensuring responsive design, interactivity, and smooth user experience using HTML, CSS, JavaScript</p>
-                <a href="https://sainawj.github.io/html-CSS-skyline/" class="project-link">View on GitHub</a>
-            </div>
-          <div class="project">
-                <img src="images/databricks.png" alt="Databricks Projects">
-                <h3>Change Management Databricks ETL Project</h3>
-                <p>A Change Management Dashboard using Flask, Databricks ETL, and MySQL to centralize, transform, and analyze data from ITSM and Azure DevOps for reporting.</p>
-                <a href="https://github.com/Sainawj/ChangeManagementAzureDatabricksETL/" class="project-link">View on GitHub</a>
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <h2 class="counter_num">8</h2>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <h2 class="counter_num">100</h2>
+                                <span>%</span>
+                                <p>Post-Go-Live Stability</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <h2 class="counter_num">40</h2>
+                                <span>+</span>
+                                <p>Enterprise Deployments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <h2 class="counter_num">1.2</h2>
+                                <span>M+</span>
+                                <p>Revenue Optimized ($)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="footer">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out via email: <a href="mailto:jonathansaina@gmail.com">sainajonathan@gmail.com</a></p>
-        <p>Or connect with me on <a href="https://www.linkedin.com/in/sainawj">LinkedIn</a>.</p>
+    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title text-center">
+                        <span>My Professional Mandate</span>
+                        <h2>Architecting Reliability. Driving Innovation.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/architecture.jpg">
+                        <div class="team__item__text">
+                            <h4>Architecture</h4>
+                            <p>Design scalable, TOGAF-aligned enterprise systems that align perfectly with business intent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/automation.jpg">
+                        <div class="team__item__text">
+                            <h4>Automation</h4>
+                            <p>Replace manual workloads with robust Python, Bash, and Ansible scripting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/availability.jpg">
+                        <div class="team__item__text">
+                            <h4>Availability</h4>
+                            <p>Engineer high-availability environments utilizing load balancers, containerization, and strict IAM controls.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="img/team/agility.jpg">
+                        <div class="team__item__text">
+                            <h4>Agility</h4>
+                            <p>Lead cross-functional Scrum teams to deliver rapid, iteration-based software solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Knowledge Sharing</span>
+                        <h2>Latest Tech Insights</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Achieving Zero Post-Go-Live Incidents in Enterprise Environments</h4>
+                            <ul>
+                                <li>Architecture</li>
+                                <li>ITIL</li>
+                            </ul>
+                            <p>A deep dive into how structured CAB validation and operational readiness checks can completely eliminate deployment fallout...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Virtualization ROI: Reducing IT Procurement Costs by 40%</h4>
+                            <ul>
+                                <li>VMware</li>
+                                <li>Cloud Cost Ops</li>
+                            </ul>
+                            <p>Examining the financial and performance impact of migrating legacy physical infrastructure to scalable virtual servers...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Microservices in Practice: Docker & React E-commerce Scaling</h4>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Kubernetes</li>
+                            </ul>
+                            <p>How breaking down monolithic applications into containerized microservices enables faster versioning and robust payment protection...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Ready to scale your enterprise infrastructure?</h2>
+                        <p>Let's build secure, automated, and high-performance solutions together.</p>
+                        <a href="./contact.html">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><h3 style="color: white; font-weight: bold;">J. SAINA</h3></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About Me</h5>
+                            <p>IT Solutions Architect and Software Engineer with expertise in solution design, enterprise infrastructure, and software-driven automation based in Nairobi, Kenya.</p>
+                            <a href="./about.html" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Navigation</h5>
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Projects</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Core Tech</h5>
+                            <ul>
+                                <li><a href="#">AWS / Azure</a></li>
+                                <li><a href="#">Python & Node.js</a></li>
+                                <li><a href="#">Docker & Kubernetes</a></li>
+                                <li><a href="#">Linux (RHEL/Ubuntu)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Get in Touch</h5>
+                            <p>Open to leading enterprise IT architecture and driving high-impact transformation across complex systems.</p>
+                            <form action="https://formspree.io/f/xdawybbq" method="POST">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                    <textarea name="message">I’d value a quick discussion on a task or project we could collaborate on.</textarea>
+                                    <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            Jonathan Saina | Designed for enterprise scalability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

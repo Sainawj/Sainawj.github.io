@@ -2217,3 +2217,46 @@ ol {
             }
         }
     });
+
+/* Position the Owl Carousel Navigation Arrows */
+.latest__slider .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: #222 !important; 
+    color: #ffffff !important;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10 !important; /* THIS FIXES IT: Forces the buttons to sit above the blog cards */
+}
+
+/* Push Left Arrow to the edge */
+.latest__slider .owl-nav button.owl-prev {
+    left: -15px; 
+}
+
+/* Push Right Arrow to the edge */
+.latest__slider .owl-nav button.owl-next {
+    right: -15px; 
+    left: auto !important; /* THIS FIXES IT: Prevents conflicting left positioning */
+}
+
+/* Hover Effect for Arrows */
+.latest__slider .owl-nav button:hover {
+    background: #00bfff !important; 
+    color: #ffffff !important;
+}
+
+/* Hide arrows on smaller mobile screens to prevent overlap */
+@media only screen and (max-width: 767px) {
+    .latest__slider .owl-nav button {
+        display: none !important;
+    }
+}

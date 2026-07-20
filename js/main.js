@@ -150,7 +150,12 @@
         autoplayTimeout: 4000,          // Time between slides in milliseconds
         autoplayHoverPause: true,       // FEATURES: Pauses carousel when hovered
         nav: true,                      // FEATURES: Enables Left/Right arrows
-        autoplay: true,
+		navText: [
+		            "<i class='fa fa-angle-left'></i>", 
+		            "<i class='fa fa-angle-right'></i>"
+		        ],        
+		
+		autoplay: true,
         responsive: {
             992: {
                 items: 3

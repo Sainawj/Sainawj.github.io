@@ -110,12 +110,15 @@
     --------------------*/
     $(".latest__slider").owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 30,
         items: 3,
         dots: true,
         dotsEach: 2,
         smartSpeed: 1200,
         autoHeight: false,
+		autoplayTimeout: 4000,          // Time between slides in milliseconds
+    	autoplayHoverPause: true,       // FEATURES: Pauses carousel when hovered
+    	nav: true,                      // FEATURES: Enables Left/Right arrows
         autoplay: true,
         responsive: {
             992: {

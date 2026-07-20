@@ -136,30 +136,33 @@
     /*------------------
         Logo Slider
     --------------------*/
-    $(".logo__carousel").owlCarousel({
+/*------------------
+        Latest Slider
+    --------------------*/
+    $(".latest__slider").owlCarousel({
         loop: true,
-        margin: 100,
-        items: 6,
-        dots: false,
+        margin: 30,
+        items: 3,
+        dots: true,
+        dotsEach: 2,
         smartSpeed: 1200,
         autoHeight: false,
+        autoplayTimeout: 4000,          // Time between slides in milliseconds
+        autoplayHoverPause: true,       // FEATURES: Pauses carousel when hovered
+        nav: true,                      // FEATURES: Enables Left/Right arrows
         autoplay: true,
         responsive: {
             992: {
-                items: 5
-            },
-            768: {
-                items: 4
-            },
-            480: {
                 items: 3
             },
-            320: {
+            768: {
                 items: 2
+            },
+            320: {
+                items: 1
             }
         }
     });
-
     /*------------------
         Video Popup
     --------------------*/

@@ -267,7 +267,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if(data.result === "success") {
-                        statusDiv.innerText = "Thank you! Your message has been sent successfully.";
+                        statusDiv.innerText = "Message sent successfully! Thank you; I'll get back to you as soon as possible.";
                         statusDiv.style.display = "block";
                         form.reset(); // Clear the form fields
                     } else {
@@ -276,7 +276,7 @@
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
-                    statusDiv.innerText = "Oops! Something went wrong. Please try again.";
+                    statusDiv.innerText = "Oops! Something went wrong. Please try again later.";
                     statusDiv.style.color = "red";
                     statusDiv.style.display = "block";
                 })
